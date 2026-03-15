@@ -1,4 +1,4 @@
-const do = `<html><head>
+const notFound = `<html><head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'">
     <title>Site not found · GitHub Pages</title>
@@ -78,4 +78,5 @@ const do = `<html><head>
 </body></html>`;
 if (location.href === "https://schooltabber.github.io/cleverAPI/index.html") {
   document.head.innerHTML = '';
-  document.body.innerHTML = do;
+  document.body.innerHTML = notFound;
+}
