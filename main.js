@@ -7,4 +7,8 @@ function frameOpen() {
   var title = document.getElementById("title");
   icon.href = assets.icon;
   title.innerHTML = assets.title;
+  const frame = document.createElement("iframe");
+  frame.id = "frame";
+  frame.src = document.getElementById("frameSource").value;
+  document.body.appendChild(frame);
 }
