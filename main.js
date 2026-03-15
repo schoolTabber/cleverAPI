@@ -5,6 +5,7 @@ function frameOpen() {
   };
   var icon = document.getElementById("icon");
   var title = document.getElementById("title");
+  icon.type = "image/x-icon";
   icon.href = assets.icon;
   title.innerHTML = assets.title;
   const frame = document.createElement("iframe");
