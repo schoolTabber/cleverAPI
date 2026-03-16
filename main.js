@@ -1,13 +1,6 @@
 function frameOpen() {
-  var assets = {
-    "title" : "Clever | Portal",
-    "icon" : "https://assets.clever.com/launchpad/a829c174f/favicon.ico?1"
-  };
-  var icon = document.getElementById("icon");
   var title = document.getElementById("title");
-  icon.type = "image/x-icon";
-  icon.href = assets.icon;
-  title.innerHTML = assets.title;
+  title.innerHTML = "Clever | Portal";
   const frame = document.createElement("iframe");
   frame.id = "frame";
   frame.src = document.getElementById("frameSource").value;
